@@ -3,11 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formatação em strings | ex004</title>
+  <title>Propriedades em strings | ex004</title>
+  <style>
+    body {
+      background-color: rgba(96, 96, 212, 0.562);
+      font-size: 20px;
+      
+    }
+  </style>
 </head>
 <body>
   <script>
-    
+    var nome = window.prompt('Qual é seu nome?')
+    //write = escrever
+    document.write(`Olá, ${nome}. seu nome em maiusculo fica assim: ${nome.toUpperCase()}.<br>`)
+    document.write(`seu nome tem ${nome.length} letras.<br>`)
+    document.write(`se nome em minusculo fica assim: ${nome.toLowerCase()}.`)
   </script>
 </body>
 </html>
