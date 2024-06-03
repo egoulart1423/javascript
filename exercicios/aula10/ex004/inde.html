@@ -31,22 +31,6 @@
       text-align: center;
     }
   </style>
-  <script>
-    function clicar() {
-      document.getElementById('area').style.backgroundColor = 'red';
-      document.getElementById('area').innerText = 'Clicado!';
-    }
-
-    function sair() {
-      document.getElementById('area').style.backgroundColor = 'green';
-      document.getElementById('area').innerText = 'interaja...';
-    }
-
-    function drento() {
-      document.getElementById('area').style.backgroundColor = 'blue';
-      document.getElementById('area').innerText = 'Dentro!';
-    }
-  </script>
 </head>
 <body>
   <main>
@@ -54,5 +38,27 @@
       interaja...
     </div>
   </main>
+  
+  <script>
+    var a = window.document.querySelector('div#area')
+    a.addEventListener("onclick",clicar)
+    a.addEventListener("mouseout", sair)
+
+
+    function clicar() {
+      a.style.backgroundColor = 'red';
+      a.innerText = 'Clicado!';
+    }
+
+    function sair() {
+      a.style.backgroundColor = 'green';
+      a.innerText = 'interaja...';
+    }
+
+    function drento() {
+      a.style.backgroundColor = 'blue';
+      a.innerText = 'Dentro!';
+    }
+  </script>
 </body>
 </html>
