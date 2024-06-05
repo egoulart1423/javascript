@@ -49,14 +49,16 @@
   </div>
 
   <script>
-    function somar() {
-    var tn1 = window.document.getElementById("txtn1")
-    var tn2 = window.document.getElementById("txtn2")
-    var res = window.document.getElementById("res")
-    var n1 = Number(tn1.value)
-    var n2 = Number(tn2.value)
-    var s = n1 + n2
-    res.innerHTML = `o resultado da soma entre ${n1} e ${n2} é: ${s} BURRÃO`
+    function somar() { // crinando uma função para o evendo onclick/somar
+
+    var tn1 = window.document.getElementById("txtn1") //ta puxando o input txtn1
+    var tn2 = window.document.getElementById("txtn2") // ta puxando o input txtn2
+    var res = window.document.getElementById("res") //ta puxando a div res
+    var n1 = Number(tn1.value) // ta colocando a variável tn1 como número 
+    var n2 = Number(tn2.value) // ta colocando a variável tn2 como número
+    var s = n1 + n2 // o resultado e n1 + n2 vai ser "s"
+    res.innerHTML = `o resultado da soma entre ${n1} e ${n2} é: ${s} BURRÃO` //mudando o HTML do texto da variável res.
+
   }
   </script>
 </body>
