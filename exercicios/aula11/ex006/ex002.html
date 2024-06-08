@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETRAN EX2</title>
+</head>
+<body>
+  <h1>Qual o seu país?</h1>
+  eu sou de: <input type="text" name="pais" id="pais"> 
+  <input type="submit" value="verificar" onclick="calcular()">
+  <div id="res"></div>
+  <script>
+    function calcular(){
+      var pais = document.getElementById('pais').value.toLowerCase(); // O toLowerCase, vai deixar a resposta independente se ela for "Brasil" "BRASIL" "brasil"
+      var res = document.getElementById('res')
+      if (pais != 'brasil'){
+        res.innerHTML = `não acredito que você é de ${pais}, seu estranho repugnante!!`
+      }else {
+        res.innerHTML = `que bom que você é brazuca! hehe`
+      }
+    }
+  </script>
+</body>
+</html>
