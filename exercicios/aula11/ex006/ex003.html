@@ -6,6 +6,20 @@
   <title>Bixin Preferido</title>
 </head>
 <body>
-  
+  <h1>qual é seu bixin Preferido??</h1>
+  <input type="text" name="txtbixin" id="txtbixin">
+  <input type="button" value="é esse" onclick="enviar()">
+  <div id="res" ></div>
+  <script>
+    function enviar() {
+      var get = window.document.getElementById('res')
+      var txt = document.getElementById('txtbixin').value.toLowerCase();
+      if (txt != 'nero'){
+        get.innerHTML = `<p>paia</p>`
+      }else {
+        get.innerHTML = `<p><strong>massa</strong></p>`
+      }
+    }
+  </script>
 </body>
 </html>
