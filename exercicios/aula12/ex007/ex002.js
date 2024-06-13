@@ -1,4 +1,5 @@
-var horas = 22
+var agora = new Date()
+var horas = agora.getHours()
 if (horas < 5){
   console.log('Boa madrugada!')
 } else if (horas < 12){
