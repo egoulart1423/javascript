@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'worksans';
+  src: url('WorkSans-Italic-VariableFont_wght.ttf');
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body, html {
+  background-color: rgb(103, 103, 194);
+  height: 100%;
+  width: 100%;
+  font-family: 'worksans';
+}
+
+body > header{
+  margin: 80px 0px 50px 0px;
+  color: white;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  margin: auto;
+  padding: 15px;
+  width: 30vw;
+  height: 40vh;
+}
+
+footer {
+  margin: 7px;
+  text-align: center;
+}
