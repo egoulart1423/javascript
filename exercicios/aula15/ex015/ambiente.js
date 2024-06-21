@@ -1,5 +1,5 @@
 
-//teste de repetição por ultimo
+//teste de repetição por ultimo, primeiro ele executa o código para depois ver a condição
 var c = 1
 do {
   console.log('boa noite!')
@@ -7,11 +7,7 @@ do {
 } while (c <= 6) 
 
 //teste de repetição primeiro
-var c = 1
-while (c <= 3) {
-  console.log('boa noite!')
-  c++
-}
+
 
 /* console.log('boa noite!')
 console.log('boa noite!')
