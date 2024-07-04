@@ -4,5 +4,5 @@ do {
   num++
 } while (num < 5) */
 for (var num = 1;num < 5;num++) {
-  console.log('pisca o cuzin:c')
+  console.log('enzo delicio')
 }
