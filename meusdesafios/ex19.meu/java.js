@@ -1,6 +1,6 @@
 function enviar() {
-  let num = document.getElementById("txtn")
   let res = document.getElementById("res")
+  let num = document.getElementById("txtn")
   let n = Number(num.value)
 
   if (num.value.length == 0) {
@@ -10,4 +10,12 @@ function enviar() {
   } else {
     res.innerHTML += `Valor ${n} adicionado <br>`
   }
+}
+
+function finalizar() {
+  let res = document.getElementById("res")
+  let f = document.getElementById("final")
+  
+  let numeros = res.innerText.length
+  f.innerHTML = `você adicionou ${numeros}`
 }
