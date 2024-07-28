@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contar Números</title>
+</head>
+<body>
+  <input type="number" id="txtn" placeholder="Digite um número">
+  <button onclick="adicionarNumero()">Adicionar</button>
+  <div id="final"></div>
+
+  <script>
+    let dados = []; // Declara o array fora da função para manter os valores
+
+    function adicionarNumero() {
+      let num = document.getElementById("txtn");
+      let n = Number(num.value);
+
+      // Verifica se o valor é um número válido
+      if (!isNaN(n)) {
+        dados.push(n); // Adiciona o número ao array
+        let quantidade = dados.length;
+
+        document.getElementById("final").innerHTML = quantidade; // Exibe a quantidade de números adicionados
+      } else {
+        alert('Por favor, insira um número válido');
+      }
+
+      // Limpa o input para o próximo número
+      num.value = '';
+    }
+  </script>
+</body>
+</html>
