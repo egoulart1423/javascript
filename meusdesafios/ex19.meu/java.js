@@ -20,6 +20,8 @@ function enviar() {
 function finalizar() {  
   let menornum = dados[0]
   let maiornum = dados[0]
+  let soma = dados[0]
+  let quantidade = dados.length
 
   for(let i = 1; i < dados.length; i++) {
     if (dados[i] > maiornum) {
@@ -31,11 +33,20 @@ function finalizar() {
     if (dados[e] < menornum) {
       menornum = dados[e]
     }
-  }
+  } 
 
-  let quantidade = dados.length
+  for(let s = 1; s < dados.length; s++) {
+    if(dados[s] == soma || dados[s] != soma) {
+      soma = soma + dados[s]
+    }
+
+    media = soma / quantidade
+
+  }
   document.getElementById('final').innerText = `Você adicionou ${quantidade} números!`
   document.getElementById('final').innerHTML += `<br>O maior número adicionado é ${maiornum}` 
   document.getElementById('final').innerHTML += `<br>O menor número adicionado é ${menornum}`
   document.getElementById('final').innerHTML += `<br>O primeiro valor adicionado é ${dados[0]}`
+  document.getElementById('final').innerHTML += `<br>A soma entre esses números é ${soma}`
+  document.getElementById('final').innerHTML += `<br>A média entre esses números é ${media}`
 }
